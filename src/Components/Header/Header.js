@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 // Thẻ thay thế thẻ a trong routing của react router DOM
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default class Header extends Component {
     render() {
@@ -14,24 +14,31 @@ export default class Header extends Component {
                     <div className="collapse navbar-collapse" id="collapsibleNavId">
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li className="nav-item">
-                                <NavLink activeStyle={{fontWeight:'bold'}} activeClassName="bg-light text-dark" className="nav-link" to="/home">Home <span className="sr-only">(current)</span></NavLink>
+                                <NavLink activeStyle={{ fontWeight: 'bold' }} activeClassName="bg-light text-dark" className="nav-link" to="/home">Home <span className="sr-only">(current)</span></NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink activeStyle={{fontWeight:'bold'}} activeClassName="bg-light text-dark" className="nav-link" to="/contact">Contact</NavLink>
+                                <NavLink activeStyle={{ fontWeight: 'bold' }} activeClassName="bg-light text-dark" className="nav-link" to="/contact">Contact</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink activeStyle={{fontWeight:'bold'}} activeClassName="bg-light text-dark" className="nav-link" to="/login">Login</NavLink>
+                                <NavLink activeStyle={{ fontWeight: 'bold' }} activeClassName="bg-light text-dark" className="nav-link" to="/login">Login</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink activeStyle={{fontWeight:'bold'}} activeClassName="bg-light text-dark" className="nav-link" to="/register">Register</NavLink>
+                                <NavLink activeStyle={{ fontWeight: 'bold' }} activeClassName="bg-light text-dark" className="nav-link" to="/register">Register</NavLink>
                             </li>
-                            {/* <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <li className="nav-item">
+                                <NavLink activeStyle={{ fontWeight: 'bold' }} activeClassName="bg-light text-dark" className="nav-link" to="/lifecycle">Life Cycle</NavLink>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Hooks</a>
                                 <div className="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a className="dropdown-item" href="#">Action 1</a>
-                                    <a className="dropdown-item" href="#">Action 2</a>
+                                    <NavLink className="dropdown-item" to="/usestatedemo">Use State Hook</NavLink>
+                                    <NavLink className="dropdown-item" to="/baitapchonxe">Bài tập chọn xe</NavLink>
+                                    <NavLink className="dropdown-item" to="/UseEffectHome">UseEffectHome</NavLink>
+                                    <NavLink className="dropdown-item" to="/ReduxHookHome">ReduxHookHome</NavLink>
+                                    <NavLink className="dropdown-item" to="/usecallback">HookUSeCallBack</NavLink>
+                                    <NavLink className="dropdown-item" to="/usememo">HookUseMemo</NavLink>
                                 </div>
-                            </li> */}
+                            </li>
                         </ul>
                         <form className="form-inline my-2 my-lg-0">
                             <input className="form-control mr-sm-2" type="text" placeholder="Search" />
